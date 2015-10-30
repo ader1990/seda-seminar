@@ -1,0 +1,64 @@
+Addressing security challenges in a virtualized environment
+
+
+Security challenges in a virtualized environment:
+
+    1. Covert channel attacks on x86 virtualized systems[1]
+    2. Buffer overflows
+    3. VM image pollution
+    4. CPU-level computation is not encrypted[2]
+    5. Updates not applied to the virtual machine[9]
+    6. Network security and privacy[7]
+    7. Untrusted virtualization provider[6]
+    8. Untrusted virtualized OS[6]
+    9. Availability of VMs
+    10. Negative externalities[10]
+
+
+Security solutions in a virtualized environment:
+
+    1. Covert channels are impractical, as the capacity was thought to be less than 2b/s[1]
+    2. Data encryption
+        2.1 Microsoft BitLocker in software using TPM[4]
+        2.2 Vmware hardening guide[5][6]
+    3. Homomophically encrypted one instruction computation[2]
+    4. VLANs, VXLANs, (NV)GRE network partitioning solutions[5]
+    5. Memory hardening, hypervisor lockdown mode[5]
+    6. Nested virtual machines(nested process level virtual machines)[8]
+    7. Software Update as a Service[9]
+    8. Security-aware Virtual Machine Allocation[10]
+
+
+For every security challenge,there will be presented the threat level(if found)
+For every solution, there will be presented the downsides and performance costs.
+
+
+Bibliography:
+
+    1. Whispers in the Hyper-Space: High-Bandwidth and Reliable Covert Channel Attacks Inside the Cloud
+Zhenyu Wu, Member, IEEE, Zhang Xu, and Haining Wang, Senior Member, IEEE
+Whispers-in-the-Hyper-Space.pdf
+    2. The HEROIC Framework: Encrypted Computation Without Shared Keys
+Nektarios Georgios Tsoutsos, Student Member, IEEE, and Michail Maniatakos, Member, IEEE
+The-HEROIC-Framework.pdf
+    3. Implementation of a Software-Defined Storage Service with Heterogeneous Storage Technologies
+Chao-Tung Yang, Wei-Hsiang Lien, Yu-Chuan Shen, Fang-Yi Leu
+openstack-swift-havana.pdf
+    4. https://technet.microsoft.com/en-us/library/cc974516.aspx
+    5. https://pubs.vmware.com/vsphere-55/topic/com.vmware.ICbase/PDF/vsphere-esxi-vcenter-server-55-security-guide.pdf
+    6. A Trusted Virtual Machine in an Untrusted Management Environment
+Chunxiao Li, Student Member, IEEE, Anand Raghunathan, Fellow, IEEE, and Niraj K. Jha, Fellow, IEEE
+A-Trusted-Virtual-Machine-in-an-Untrusted-Management-Environment.pdf
+    7. SECURITY THREATS IN CLOUD COMPUTING
+Neha Kajal, CSE & IT department, ITM University, Gurgaon, India
+Nikhat Ikram CSE & IT department ITM University Gurgaon, India
+Prachi CSE & IT department  ITM University Gurgaon, India
+ SECURITY-THREATS-IN-CLOUD-COMPUTING.pdf
+    8. Matryoshka: Strengthening Software Protection via Nested Virtual Machines
+Matryoshka.pdf
+    9. UaaS: Software Update as a Service for the IaaS Cloud
+Kai Liu, Deqing Zou, Hai Jin
+UaaS.pdf
+    10. Security-aware Virtual Machine Allocation in the Cloud: A Game Theoretic Approach
+Luke Kwiat1, Charles A. Kamhoua, Kevin A. Kwiat, Jian Tang, Andrew Martin
+Security-aware-Virtual-Machine.pdf
